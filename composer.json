@@ -1,0 +1,29 @@
+{
+    "name": "mockapi/resourceprovider",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Mockapi\\ResourceProvider\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mockapi/interfaces.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/mockapi/validate.git"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "4.7.*"
+    },
+    "require": {
+        "mockapi/interfaces": "dev-master",
+        "mockapi/validate": "dev-master",
+        "symfony/yaml": "dev-master",
+        "ramsey/uuid": "~2.8"
+    }
+}
